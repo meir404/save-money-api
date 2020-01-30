@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Logic.Models;
+using Logic.Repositories;
 using Logic.Services.Interfases;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -15,16 +16,20 @@ namespace save_money_api.Controllers
     public class UserController : ControllerBase
     {
         private readonly ITranslateService _translateService;
+        private readonly UserRepository _userRepository;
 
-        public UserController(ITranslateService translateService)
+        public UserController(ITranslateService translateService, UserRepository userRepository)
         {
             _translateService = translateService;
+            _userRepository = userRepository;
         }
 
         [HttpPost]
-        public ActionResult<int> Save(User user)
+        public async Task<ActionResult<int>> Save(User user)
         {
-            return Ok(12);
+            if (!ModelState.IsValid)
+                return BadRequest();
+            return Ok(await _userRepository.Save(user));
         }
 
         [HttpGet, Route("current")]

@@ -1,5 +1,7 @@
 using System;
 using System.Text;
+using DAL.Services;
+using Logic.Repositories;
 using Logic.Services;
 using Logic.Services.Interfases;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -38,8 +40,9 @@ namespace save_money_api
                     IssuerSigningKey = secretKey
                 };
             });
-
+            services.AddScoped<DataResolver>(s=> new DataResolver(Configuration.GetValue<string>("ConnectionStrings:Save-Money-DB")));
             services.AddScoped<ITranslateService, TranslateService>();
+            services.AddScoped<UserRepository>();
             services.AddControllers();
         }
 

@@ -1,0 +1,11 @@
+C:\My-Dev\react-save-money\save-money-api\DAL\bin\Debug\netstandard2.0\DAL.deps.json
+C:\My-Dev\react-save-money\save-money-api\DAL\bin\Debug\netstandard2.0\DAL.dll
+C:\My-Dev\react-save-money\save-money-api\DAL\obj\Debug\netstandard2.0\DAL.csprojAssemblyReference.cache
+C:\My-Dev\react-save-money\save-money-api\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfoInputs.cache
+C:\My-Dev\react-save-money\save-money-api\DAL\obj\Debug\netstandard2.0\DAL.AssemblyInfo.cs
+C:\My-Dev\react-save-money\save-money-api\DAL\bin\Debug\netstandard2.0\DAL.pdb
+C:\My-Dev\react-save-money\save-money-api\DAL\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.dll
+C:\My-Dev\react-save-money\save-money-api\DAL\bin\Debug\netstandard2.0\Microsoft.EntityFrameworkCore.xml
+C:\My-Dev\react-save-money\save-money-api\DAL\obj\Debug\netstandard2.0\DAL.csproj.CopyComplete
+C:\My-Dev\react-save-money\save-money-api\DAL\obj\Debug\netstandard2.0\DAL.dll
+C:\My-Dev\react-save-money\save-money-api\DAL\obj\Debug\netstandard2.0\DAL.pdb
